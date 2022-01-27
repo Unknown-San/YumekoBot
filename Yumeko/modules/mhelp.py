@@ -7,7 +7,7 @@ from pyrogram import __version__ as pyrover
 from Yumeko.events import register as MEMEK
 from Yumeko import telethn as tbot
 
-PHOTO = "https://telegra.ph/file/7c3c26e0ed938aec91209.jpg"
+PHOTO = "https://telegra.ph/file/b58f003c6401cbf0e5399.jpg"
 
 @MEMEK(pattern=("/mhelp"))
 async def awake(event):
@@ -25,5 +25,5 @@ async def awake(event):
   YUMEKO += "• /control - **open the player settings panel** \n"
   YUMEKO += "• /reload - **To Refresh admin list** \n"
 
-  BUTTON = [[Button.url("☎️ Support", "https://t.me/lunaXresso"), Button.url("📡 Updates", "https://t.me/ZeinzoProject")]]
+  BUTTON = [[Button.url("☎️ Support", "https://t.me/enmu_chat_support"), Button.url("📡 Updates", "https://t.me/enmuUpdates")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=LUNA,  buttons=BUTTON)
