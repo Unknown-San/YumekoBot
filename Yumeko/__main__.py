@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 YUMEKO_IMG = "https://te.legra.ph/file/83ff62f385d9d0fbfab5c.mp4"
 
 PM_START_TEXT = """
-**Hey I am Enmu Kizuki** [ㅤ](https://te.legra.ph/file/83ff62f385d9d0fbfab5c.mp4)
+**Hey I am Enmu Kizuki** [ㅤ](https://telegra.ph/file/83ff62f385d9d0fbfab5c.mp4)
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
 **×I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!**
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -101,7 +101,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-**Main commands:**  [ㅤ](https://te.legra.ph/file/90b49303716084ccb7f98.mp4)
+**Main commands:**  [ㅤ](https://telegra.ph/file/90b49303716084ccb7f98.mp4)
 ❂ /start: Starts me! You've probably already used this.
 ❂ /help: Sends this message; I'll tell you more about myself.
 
@@ -477,7 +477,7 @@ def yumeko_about_callback(update, context):
     elif query.data == "yumeko_credit":
         query.message.edit_text(
             text=f"<b> `Cʀᴇᴅɪᴛ Fᴏʀ Lᴜɴᴀ Dᴇᴠ's` </b>\n"
-            f"\nHᴇʀᴇ Sᴏᴍᴇ Dᴇᴠᴇʟᴏᴘᴇʀs Hᴇʟᴘɪɴɢ Iɴ Mᴀᴋɪɴɢ Tʜᴇ Muzan",
+            f"\nHᴇʀᴇ Sᴏᴍᴇ Dᴇᴠᴇʟᴏᴘᴇʀs Hᴇʟᴘɪɴɢ Iɴ Mᴀᴋɪɴɢ Tʜᴇ Enmu",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -901,7 +901,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am alive](https://telegra.ph/file/b58f003c6401cbf0e5399.jpg) ")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", " ([I am alive](https://telegra.ph/file/b58f003c6401cbf0e5399.jpg)) ")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
