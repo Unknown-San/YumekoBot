@@ -82,7 +82,7 @@ async def inline_help_func(__help__):
             input_message_content=InputTextMessageContent(
                 "Click a button to get started."
             ),
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            thumb_url="https://te.legra.ph/file/5ce17fa44a86e39ff6415.jpg",
             reply_markup=buttons,
         ),
     ]
@@ -94,27 +94,25 @@ async def alive_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url=f"https://t.me/lunatapibot"),
+        InlineKeyboardButton("Bot link", url=f"https://t.me/enmu_kizuki_bot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
     )
 
     msg = f"""
-**[Yumeko](https://t.me/):**
+**[ENMU](https://t.me/Enmu_kizuki_bot):**
 **RoBot:** `{bot_state}`
-**UserBot:** `Alive`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](https://t.me/) | [UBOT](https://t.me/Ryu_God)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Yumeko Stats",
-            thumb_url="https://telegra.ph/file/fbb803ea2af74de745362.jpg",
+            description="Check ENMU Stats",
+            thumb_url="https://te.legra.ph/file/a737ad54ffa1a57f3c4d3.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -133,15 +131,15 @@ async def about_function(answers):
     )
 
     msg = f"""
-[Yumeko✨](https://t.me/) 
-   Maintained by [X](t.me/Ryu_God) [Y](t.me/TheBlacklinen) 
+[Enmu](https://t.me/enmu_kizuki_bot) 
+   Maintained by [KOKUSHIBO](t.me/uppermoonX1) [Muzan](t.me/demon_xlord) 
 Built with using python-telegram-bot v13.7 Running on Python 3.9.7
 """
     answers.append(
         InlineQueryResultArticle(
             title="About",
-            description="About Yumeko",
-            thumb_url="https://telegra.ph/file/fbb803ea2af74de745362.jpg",
+            description="About ENMU",
+            thumb_url="https://te.legra.ph/file/dd3d199549cd880918cf4.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
