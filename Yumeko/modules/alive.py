@@ -19,7 +19,7 @@ async def awake(event):
   YUMEKO += f"×**Pyrogram Version : {pyrover}** \n\n"
   YUMEKO += "**Thanks For Summoning Me Here 🖤**"
   BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/enmu_kizuki_bot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/enmu_chat_support")]]
-  await tbot.send_file(event.chat_id, PHOTO, caption=ENMU,  buttons=BUTTON)
+  await tbot.send_file(event.chat_id, PHOTO, caption=YUMEKO,  buttons=BUTTON)
 
 @MEMEK(pattern=("/reload"))
 async def reload(event):
