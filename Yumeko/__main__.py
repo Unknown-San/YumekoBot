@@ -477,17 +477,17 @@ def yumeko_about_callback(update, context):
     elif query.data == "yumeko_credit":
         query.message.edit_text(
             text=f"<b> `Cʀᴇᴅɪᴛ Fᴏʀ Lᴜɴᴀ Dᴇᴠ's` </b>\n"
-            f"\nHᴇʀᴇ Sᴏᴍᴇ Dᴇᴠᴇʟᴏᴘᴇʀs Hᴇʟᴘɪɴɢ Iɴ Mᴀᴋɪɴɢ Tʜᴇ YUMEKO",
+            f"\nHᴇʀᴇ Sᴏᴍᴇ Dᴇᴠᴇʟᴏᴘᴇʀs Hᴇʟᴘɪɴɢ Iɴ Mᴀᴋɪɴɢ Tʜᴇ Muzan",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="亗 ʀʏᴜ", url="https://t.me/Ryu_God"),
-                    InlineKeyboardButton(text="Tarun • [ᴀc͜͡ɢᴄ]", url="https://t.me/TheBlackLinen"),
+                    InlineKeyboardButton(text="𝐊𝐨𝐤𝐮𝐬𝐡𝐢𝐛𝐨 ★彡Kɪᴢᴜᴋɪ彡★", url="https://t.me/UppermoonX1"),
+                    InlineKeyboardButton(text="Muzan ★彡Dᴇᴍᴏɴ Lᴏʀᴅ彡★", url="https://t.me/demon_xLord"),
                  ],
                  [
-                    InlineKeyboardButton(text="Bot", url="https://t.me/"),
-                    InlineKeyboardButton(text="Support", url="https://t.me/"),
+                    InlineKeyboardButton(text="Bot", url="https://t.me/enmu_kizuki_bot"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/enmu_chat_support"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="yumeko_basichelp"),
@@ -503,7 +503,7 @@ def yumeko_about_callback(update, context):
                  f"\nYou can add me to your group by clicking this link and selecting the chat.\n"
                  f"\nRead Admin Permissions and Anti-spam for basic info.\n"
                  f"\nRead Detailed Setup Guide to learn about setting up the bot in detail. (Recommended)\n"
-                 f"\nIf you do need help with further instructions feel free to ask in @lunaXresso.",
+                 f"\nIf you do need help with further instructions feel free to ask in @Enmu_chat_support.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -523,11 +523,11 @@ def yumeko_about_callback(update, context):
     elif query.data == "yumeko_del":
         query.message.edit_text(
             text=f"｢ Admin Permissions 」\n"
-                     f"\nTo avoid slowing down, Yumeko caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
+                     f"\nTo avoid slowing down, Enmu caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), Yumeko will only find out ~10 minutes later.\n"
                     f"\nIf you want to update them immediately, you can use the /admincache or /reload command, that'll force Yumeko to check who the admins are again and their permissions\n"
                     f"\nIf you are getting a message saying:\nYou must be this chat administrator to perform this action!\n"
-                    f"\nThis has nothing to do with Yumeko's rights; this is all about YOUR permissions as an admin. Yumeko respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Yumeko. Similarly, to change Yumeko settings, you need to have the Change group info permission.\n"
-                    f"\nThe message very clearly states that you need these rights - not Yumeko.",
+                    f"\nThis has nothing to do with Enmu's rights; this is all about YOUR permissions as an admin. Yumeko respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with Yumeko. Similarly, to change Yumeko settings, you need to have the Change group info permission.\n"
+                    f"\nThe message very clearly states that you need these rights - not Enmu.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -588,7 +588,7 @@ def yumeko_about_callback(update, context):
                 [
                   [
                      InlineKeyboardButton(text="Back", callback_data="yumeko_lub"),
-                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/"),
+                     InlineKeyboardButton(text="☎️ Support", url=f"https://t.me/enmu_chat_support"),
                   ]
                 ]
             ),
@@ -600,7 +600,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi.. ɪ'ᴀᴍ Lᴜɴᴀ*
-                 \nHere is the [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://www Xhamster.com) .""",
+                 \nHere is the [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://www .com) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -658,7 +658,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ 📢 ",
-                            url="https://t.me/{}".format(SUPPORT_CHAT),
+                            url="https://t.me/enmu_chat_support{}".format(SUPPORT_CHAT),
                         )
                     ],
                 ]
