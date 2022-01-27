@@ -18,8 +18,8 @@ async def awake(event):
   YUMEKO += f"×**Telethon Version : {tlhver}** \n\n"
   YUMEKO += f"×**Pyrogram Version : {pyrover}** \n\n"
   YUMEKO += "**Thanks For Adding Me Here ❤️**"
-  BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/Enmu_kizuki_bot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.meEnmu_chat_support/")]]
-  await tbot.send_file(event.chat_id, PHOTO, caption=YUMEKO,  buttons=BUTTON)
+  BUTTON = [[Button.url("ʜᴇʟᴘ", "t.me/Enmu_kizuki_bot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "t.meEnmu_chat_support")]]
+  await tbot.send_file(event.chat_id, PHOTO, caption=ENMU,  buttons=BUTTON)
 
 @MEMEK(pattern=("/reload"))
 async def reload(event):
