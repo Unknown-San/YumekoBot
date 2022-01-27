@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 YUMEKO_IMG = "https://te.legra.ph/file/83ff62f385d9d0fbfab5c.mp4"
 
 PM_START_TEXT = """
-**Hey I am Enmu** [ㅤ](https://te.legra.ph/file/83ff62f385d9d0fbfab5c.mp4)
+**Hey I am Enmu Kizuki** [ㅤ](https://te.legra.ph/file/83ff62f385d9d0fbfab5c.mp4)
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
 **×I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!**
 ️➖➖➖➖➖➖➖➖➖➖➖➖➖
