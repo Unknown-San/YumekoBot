@@ -122,7 +122,7 @@ async def okgoogle(img):
 
         if response != 400:
             await dev.edit(
-                "`Image successfully uploaded to Google. Maybe.`"
+                "`Let's slash a pp for u.......`
                 "\n`Parsing source now. Maybe.`"
             )
         else:
