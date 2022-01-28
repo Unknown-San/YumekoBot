@@ -517,7 +517,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>G</code>", parse_mode=ParseMode.HTML
+        "<code>Gathering info from SyDeXaS database .....</code>", parse_mode=ParseMode.HTML
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
     reply = "<b>Known Lower Moon Level 🌓:</b>\n"
