@@ -190,7 +190,8 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                     " Kᴏᴋᴜsʜɪʙᴏ sᴀᴍᴀ ᴊᴏɪɴᴇᴅ \n  Bᴇʜᴏʟᴅ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ \n  ×××× Uᴘᴘᴇʀ ᴍᴏᴏɴ 1 ××××.\n\n  • Co owner of @SyDeXaS", reply_to_message_id=reply
+                     " Kᴏᴋᴜsʜɪʙᴏ sᴀᴍᴀ ᴊᴏɪɴᴇᴅ \n  Bᴇʜᴏʟᴅ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ \n  ×××× Uᴘᴘᴇʀ ᴍᴏᴏɴ 1 ××××.\n\n  • Co owner of @SyDeXaS", 
+                    reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
