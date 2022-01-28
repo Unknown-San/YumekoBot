@@ -122,7 +122,7 @@ async def okgoogle(img):
 
         if response != 400:
             await dev.edit(
-                "`Let's slash a pp for u.......`
+                "`Let's slash a pp for u.......`"
                 "\n`Parsing source now. Maybe.`"
             )
         else:
