@@ -202,8 +202,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    " Bᴇ ᴄᴀʀᴇғᴜʟ Kɪᴍᴅs \n\n  Pᴀᴘᴀ Jᴏɪɴᴇᴅ ᴛʜᴇ Cʜᴀᴛ.",
-                    reply_to_message_id=reply,
+                    " Bᴇ ᴄᴀʀᴇғᴜʟ Kɪᴍᴅs \n\n  Pᴀᴘᴀ Jᴏɪɴᴇᴅ ᴛʜᴇ Cʜᴀᴛ.", reply_to_message_id=reply
+                    
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -215,8 +215,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Whoa! A Dragon disaster just joined! Stay Alert!",
-                    reply_to_message_id=reply,
+                    "Whoa! A Dragon disaster just joined! Stay Alert!", reply_to_message_id=reply
+                    
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -228,8 +228,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh! Someone with a Demon disaster level just joined!",
-                    reply_to_message_id=reply,
+                    "Huh! Someone with a Demon disaster level just joined!", reply_to_message_id=reply
+                    
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
