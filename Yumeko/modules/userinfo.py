@@ -241,7 +241,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Fetching Details from SyDeXaS please wait.....</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Appraisal results:</b> 」\n"
+        f"╒═══「<b> 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐫𝐨𝐦 𝐒𝐲𝐃𝐞𝐗𝐚𝐒:</b> 」\n"
         f"ID: <code>{user.id}</code>\n"
         f"First Name: {html.escape(user.first_name)}"
     )
