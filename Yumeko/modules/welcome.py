@@ -190,7 +190,8 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                     " Kᴏᴋᴜsʜɪʙᴏ sᴀᴍᴀ ᴊᴏɪɴᴇᴅ \n  Bᴇʜᴏʟᴅ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ \n  ×××× Uᴘᴘᴇʀ ᴍᴏᴏɴ 1 ××××.\n\n  • Co owner of @SyDeXaS", reply_to_message_id=reply
+                     " Kᴏᴋᴜsʜɪʙᴏ sᴀᴍᴀ ᴊᴏɪɴᴇᴅ \n  Bᴇʜᴏʟᴅ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ \n  ×××× Uᴘᴘᴇʀ ᴍᴏᴏɴ 1 ××××.\n\n  • Co owner of @SyDeXaS", 
+                    reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -241,8 +242,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    "ʀᴜɴ! sᴏᴍᴇᴏɴᴇ ᴡɪᴛʜ ᴀ ᴅᴇᴍᴏɴ ᴅɪsᴀsᴛᴇʀ ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ!
-                   ", reply_to_message_id=reply
+                    "ʀᴜɴ! sᴏᴍᴇᴏɴᴇ ᴡɪᴛʜ ᴀ ᴅᴇᴍᴏɴ ᴅɪsᴀsᴛᴇʀ ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ!", 
+                    reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -254,7 +255,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "ᴀᴡᴡᴏ! ᴀ xᴅᴇᴍᴏɴ ᴅɪsᴀsᴛᴇʀ ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ!", reply_to_message_id=reply
+                    "ᴀᴡᴡᴏ! ᴀ xᴅᴇᴍᴏɴ ᴅɪsᴀsᴛᴇʀ ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ!", 
+                    reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
