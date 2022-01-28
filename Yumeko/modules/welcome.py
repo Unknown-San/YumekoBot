@@ -203,7 +203,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    " ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ᴜᴘᴘᴇʀ ᴍᴏᴏɴs \n\n  ᴊᴜsᴛ ᴊᴏɪɴᴅ ᴛʜᴇ ᴄʜᴀᴛ", 
+                    " ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ᴜᴘᴘᴇʀ ᴍᴏᴏɴs \n\n  ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ", 
                     reply_to_message_id=reply
                     
                 )
