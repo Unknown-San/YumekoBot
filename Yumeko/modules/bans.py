@@ -64,25 +64,25 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Trying to put me against a God level disaster huh?")
+            message.reply_text("Trying to put me against a Upper Moon 1 level disaster huh?")
         elif user_id in DEV_USERS:
-            message.reply_text("I can't act against our own.")
+            message.reply_text("I can't act against Upper Moon Disaster.")
         elif user_id in DRAGONS:
-            message.reply_text(
-                "Fighting this Dragon here will put civilian lives at risk."
+            message.reply_text( 
+                "Fighting this Lower Moon here will put civilian lives at risk."
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Heroes association to fight a Demon disaster."
+                "Bring an order from SyDeXaS to fight a XLower Moon."
             )
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Heroes association to fight a Tiger disaster."
+                "Bring an order from Upper Moon to fight a Demon disaster."
             )
         elif user_id in WOLVES:
-            message.reply_text("Wolf abilities make them ban immune!")
+            message.reply_text("XDemon abilities make them ban immune!")
         else:
-            message.reply_text("This user has immunity and cannot be banned.")
+            message.reply_text("This user Possessed Power of RenGoku and cannot be banned.")
         return log_message
     if message.text.startswith("/s"):
         silent = True
@@ -110,7 +110,7 @@ def ban(update: Update, context: CallbackContext) -> str:
 
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
-            f"<code>❕</code><b>Ban Event</b>\n"
+            f"<code>❕</code><b>Demonic Ban Event</b>\n"
             f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
@@ -123,7 +123,7 @@ def ban(update: Update, context: CallbackContext) -> str:
             # Do not reply
             if silent:
                 return log
-            message.reply_text("Banned!", quote=False)
+            message.reply_text("Demonic Event Successful!", quote=False)
             return log
         else:
             LOGGER.warning(update)
@@ -134,7 +134,7 @@ def ban(update: Update, context: CallbackContext) -> str:
                 chat.id,
                 excp.message,
             )
-            message.reply_text("Uhm...that didn't work...")
+            message.reply_text("Uhm...My Powers aren't enough...")
 
     return log_message
 
@@ -155,18 +155,18 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
     user_id, reason = extract_user_and_text(message, args)
 
     if not user_id:
-        message.reply_text("I doubt that's a user.")
+        message.reply_text("I doubt that's a Demon Slayer.")
         return log_message
 
     try:
         member = chat.get_member(user_id)
     except BadRequest as excp:
-        if excp.message != "User not found":
+        if excp.message != "Demon Slayer not found":
             raise
-        message.reply_text("I can't seem to find this user.")
+        message.reply_text("I can't seem to find this Slayer.")
         return log_message
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("I'm not gonna Use My Powers Upon myself, are you Ok?")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member):
@@ -339,7 +339,7 @@ def unban(update: Update, context: CallbackContext) -> str:
         return log_message
 
     chat.unban_member(user_id)
-    message.reply_text("Yep, this user can join!")
+    message.reply_text("Yep, this user can enter this Domain!")
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
