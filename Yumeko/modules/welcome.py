@@ -202,7 +202,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    " Bᴇ ᴄᴀʀᴇғᴜʟ Kɪᴍᴅs \n\n  Pᴀᴘᴀ Jᴏɪɴᴇᴅ ᴛʜᴇ Cʜᴀᴛ.",
+                    " ᴀ ᴍᴇᴍʙᴇʀ ᴏғ ᴜᴘᴘᴇʀ ᴍᴏᴏɴs \n\n  ᴊᴜsᴛ ᴊᴏɪɴᴅ ᴛʜᴇ ᴄʜᴀᴛ
+                  ."
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -215,7 +216,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Whoa! A Dragon disaster just joined! Stay Alert!",
+                    "ᴡʜᴏᴀ! ᴀ ʟᴏᴡᴇʀ ᴍᴏᴏɴ ᴅɪsᴀsᴛᴇʀ ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ! sᴛᴀʏ ᴀʟᴇʀᴛ!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -228,7 +229,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh! Someone with a Demon disaster level just joined!",
+                    "ʜᴜʜ! sᴏᴍᴇᴏɴᴇ ᴡɪᴛʜ ᴀ xʟᴏᴡᴇʀ ᴍᴏᴏɴ ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟ ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ!",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -241,7 +242,8 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    "Roar! A Tiger disaster just joined!", reply_to_message_id=reply
+                    "ʀᴜɴ! sᴏᴍᴇᴏɴᴇ ᴡɪᴛʜ ᴀ ᴅᴇᴍᴏɴ ᴅɪsᴀsᴛᴇʀ ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ!
+                   ", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
@@ -253,7 +255,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "Awoo! A Wolf disaster just joined!", reply_to_message_id=reply
+                    "ᴀᴡᴡᴏ! ᴀ xᴅᴇᴍᴏɴ ᴅɪsᴀsᴛᴇʀ ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ!", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
