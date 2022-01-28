@@ -202,7 +202,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    " Carefull Kimds Papa Joined The Chat.",
+                    " Bᴇ ᴄᴀʀᴇғᴜʟ Kɪᴍᴅs \n\n  Pᴀᴘᴀ Jᴏɪɴᴇᴅ ᴛʜᴇ Cʜᴀᴛ.",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
