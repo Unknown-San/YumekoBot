@@ -110,9 +110,7 @@ If you want to report any bugs or need any help with setting up Enmu, reach us a
 
 
 
-DONATE_STRING = """Hehe, baka!!
- [Is that so!!](https://t.me/UppermoonX1) ❤️
-"""
+DONATE_STRING = """ ✌️★ I ᴀᴍ ғʀᴇᴇ ғᴏʀ ᴇᴠᴇʀʏᴏɴᴇ ★✌️"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -599,8 +597,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. ɪ'ᴀᴍ Lᴜɴᴀ*
-                 \nHere is the [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://www .com) .""",
+            text=""" Hi.. ɪ'ᴀᴍ Enmu *
+                 \nHere is the [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://github.com/Sydexas/YumekoBot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -702,7 +700,7 @@ def send_settings(chat_id, user_id, user=False):
         else:
             dispatcher.bot.send_message(
                 user_id,
-                "Sepertinya tidak ada pengaturan khusus pengguna yang tersedia :'(",
+                "There doesn't seem to be any user-specific settings available :'(",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
