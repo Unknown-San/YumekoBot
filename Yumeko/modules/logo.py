@@ -1,3 +1,5 @@
+
+   
 import os
 import io
 import requests
@@ -256,9 +258,9 @@ async def lego(event):
  else:
 
   if not quew:
-     await event.reply('Please Give a Text For The Logo.')
+     await event.reply('Please give a text for the Logo.')
      return
- pesan = await event.reply('Logo will be ready soon.')
+ pesan = await event.reply('Creating Logo. Please Wait.')
  try:
     text = event.pattern_match.group(1)
     randc = random.choice(LOGO_LINKS)
@@ -268,7 +270,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "black"
     shadowcolor = "blue"
-    fnt = glob.glob("./Yumeko/utils/Logo/*")
+    fnt = glob.glob("./Yumeko/logo/*")
     randf = random.choice(fnt)
     font = ImageFont.truetype(randf, 120)
     w, h = draw.textsize(text, font=font)
@@ -280,9 +282,9 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "Cutiepii.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by @{BOT_USERNAME}")         
+    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by {BOT_USERNAME}")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
  except Exception as e:
-    await event.reply(f'Error, Report @{enmu_chat_support}, {e}')
+    await event.reply(f'Error, Report {SUPPORT_CHAT}, {e}')
