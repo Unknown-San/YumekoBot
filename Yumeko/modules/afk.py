@@ -58,14 +58,14 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "Yoo {} sup deadman 😂",
-                "{} Dead came back alive!",
-                "Lmao {} pay $100 or gban!",
+                "Yoo {} sup deadman 😂"",
+                "{} Dead came back alive!!!",
+                "Lmao {} pay $100 or gban!!",
                 "{} is awake!",
                 "Yoo {} \n Why came back \n you were better as dead 😂!",
-                "{} !",
+                "{} is finally here!",
                 "Yoo {} sup waifu obsessed 😂🌚",
-                "Hello {} how is your GF 🌚 \n oh sorry u don't have one \n My bad 🥲😂",
+                "Say name of {} \nHe is here!",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
@@ -123,21 +123,17 @@ def reply_afk(update: Update, context: CallbackContext):
         check_afk(update, context, user_id, fst_name, userc_id)
 
 
-def check_afk(update: Update, context:CallbackContext, user_id, fst_name, userc_id):
+def check_afk(update, context, user_id, fst_name, userc_id):
     if sql.is_afk(user_id):
         user = sql.check_afk_status(user_id)
         if int(userc_id) == int(user_id):
             return
         if not user.reason:
-            res = "{} is afk.\n\nLast Seen {} ago.".format(fst_name
-                fst_name,
-                time,
-            )                                               
+            res = "{} is afk".format(fst_name)
             update.effective_message.reply_text(res)
         else:
-            res = "{} is afk.\nReason: {}\nLast seen {} ago.".format(
-                html.escape(fst_name), html.escape(user.reason), time,
-                
+            res = "{} is afk.\nReason: {}".format(
+                html.escape(fst_name), html.escape(user.reason)
             )
             update.effective_message.reply_text(res, parse_mode="html")
 
