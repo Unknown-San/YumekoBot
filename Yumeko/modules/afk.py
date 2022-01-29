@@ -58,7 +58,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "Yoo {} sup deadman 😂"",
+                "Yoo {} sup deadman 😂",
                 "{} Dead came back alive!!!",
                 "Lmao {} pay $100 or gban!!",
                 "{} is awake!",
