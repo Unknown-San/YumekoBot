@@ -30,7 +30,7 @@ useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) 
 opener.addheaders = [("User-agent", useragent)]
 
 
-@register(pattern="^/google (.*)")
+@register(pattern="^/okvai (.*)")
 async def _(event):
     if event.fwd_from:
         return
